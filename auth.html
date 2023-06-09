@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="auth.css" />
+    <script defer src="auth.js"></script>
+    <title>CEE AUTH</title>
+  </head>
+  <body>
+    <header>
+      <nav class="auth_nav">
+        <div>
+          <img src="esutlogo.webp" alt="">
+          <span>CEE APP</span>
+        </div>
+        <ul>
+          <li><a href="#" class="auth_hightlight">Sign up</a></li>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Password</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="auth_slider">
+          <!----------------------------- SignIn user component --------------------------->
+          <form class="SignUp_form form" autocomplete="off">
+    
+            <div>
+              <p>Username</p>
+              <input type="text" focus placeholder="enter username ..." />
+            </div>
+            <div>
+              <p>Password</p>
+              <input type="password" placeholder="enter password ..." />
+            </div>
+            <div>
+              <p>Email</p>
+              <input type="email" placeholder="enter email ..." />
+            </div>
+            <div>
+              <p>PhoneNumber</p>
+              <input type="text" maxlength="11" placeholder="enter phoneNumber ..." />
+            </div>
+            <div>
+              <p>Reg number</p>
+              <input type="text" placeholder="enter regNumber ..." />
+            </div>
+            <!-- <div  class="select_wrapper">
+              <p>level</p>
+              <select name="level">
+                <option value="100 "> 100 level</option>
+                <option value="200">200 level</option>
+                <option value="300">300 level</option>
+                <option value="400">400 level</option>
+                <option value="500">500 level</option>
+              </select>
+            </div> -->
+            <div>
+              <button>signUp</button>
+            </div>
+          </form>
+
+          <!----------------------------- SignUp user component --------------------------->
+          <form class="SignIn_form form" autocomplete="off">
+            <div>
+              <p>Email</p>
+              <input type="text" placeholder="enter email ..." />
+            </div>
+            <div>
+              <p>Password</p>
+              <input type="password" placeholder="enter password..." />
+            </div>
+            <div>
+              <p>Reg Number</p>
+              <input type="text" placeholder="enter regNumber ..." />
+            </div>
+            <div>
+              <button>signIn</button>
+            </div>
+          </form>
+
+          <!----------------------------- Forgotten password component --------------------------->
+
+          <form class="Forgotten_Password_form form" autocomplete="off">
+            <div>
+              <p>Email</p>
+              <input type="email" placeholder="enter email ..." />
+            </div>
+            <div>
+              <p>RegNumber</p>
+              <input type="text" placeholder="enter regNumber ..." />
+            </div>
+            <div>
+              <p>Otp</p>
+              <input type="text" placeholder="enter temporal password ..." />
+            </div>
+            <div>
+                <button>verify</button>
+            </div>
+          </form>
+
+
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
