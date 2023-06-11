@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="auth.css" />
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="auth.js"></script>
     <title>CEE AUTH</title>
   </head>
   <body>
     <header>
       <nav class="auth_nav">
-        <div>
+        <div class="logo">
           <img src="esutlogo.webp" alt="">
           <span>CEE APP</span>
         </div>
@@ -20,6 +22,9 @@
           <li><a href="#">Sign in</a></li>
           <li><a href="#">Password</a></li>
         </ul>
+       <div class="nav_burger">
+           <i class="fa fa-bars"></i>
+       </div>
       </nav>
     </header>
 
@@ -47,7 +52,7 @@
             </div>
             <div>
               <p>Reg number</p>
-              <input type="text" placeholder="enter regNumber ..." />
+              <input type="text" maxlength="13" placeholder="enter regNumber ..." />
             </div>
             <!-- <div  class="select_wrapper">
               <p>level</p>

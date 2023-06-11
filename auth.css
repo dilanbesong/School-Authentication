@@ -25,14 +25,22 @@ body {
    display: flex;
    background-color:#6e1d1d;
    animation: animate_auth_nav 800ms forwards ease-in 500ms;
-   justify-content:space-evenly;
-   padding: 6px 0 6px 0;
+   justify-content:space-between;
+   padding: 6px 8px 6px 8px;
    color: #fff;
+   min-height:50px;
+   max-height:0;
+   transition: max-height 3s ease;
 }
-.auth_nav div {
+.inc_nav_height {
+   max-height:400px;
+   transition: max-height 3s ease;
+}
+.auth_nav div.logo {
    display: flex;
    justify-content: center;
    gap:8px;
+   align-self: self-start;
 }
 
 .auth_nav img {
@@ -50,29 +58,40 @@ body {
 .auth_nav ul li {
    list-style: none;
    margin: 0 2rem;
-   /* overflow: auto;   */
-
 }
 .auth_nav ul li:nth-child(2) {
-   animation: animate_signIn 2000ms forwards 1000ms;
+   animation: animate_signIn 0.5s forwards 0.4s;
    transform: scale(0); 
-   transition: 500ms; 
+   transition: 1000ms; 
 }
 
 .auth_nav ul li:first-child {
-    transform: translateX(-1000px);
-   animation: animate_signUp 2000ms forwards ease-in 500ms; 
+    animation: animate_signUp 0.5s forwards 0.4s; 
+    transform: scale(0); 
+}
+.auth_nav li:last-child {
+    animation: animate_forgotten_password 0.5s forwards 0.4s; 
+    transform: scale(0); 
 }
 
-.auth_nav ul li:last-child {
-    transform: translateX(1000px);
-     animation: animate_forgotten_password 2000ms forwards ease-in 500ms;              
-}
+
 .auth_nav ul li a {
    text-decoration: none;  
    color: #fff; 
    font-size: 1rem; 
     text-align: justify;          
+}
+.auth_nav .nav_burger {
+   display: none;
+   align-self: self-start;
+}
+.auth_nav .nav_burger i {
+   transition: 400ms ease-in;
+   font-size: 1.2rem;
+   padding:5px ;
+   border: 1px solid #fff;
+   border-radius:3px;
+   cursor: pointer;
 }
 .auth_hightlight {
    color: yellow;
@@ -161,9 +180,8 @@ main {
    padding-left: 1rem;
    transition: padding-left 500ms ease;
 }
-/* .form .select_wrapper  {
-   
-} */
+
+
 .form div button {
    outline: none;
    border: none;
@@ -179,17 +197,30 @@ main {
 .form div button:hover {
    background-color: #420d0d;
 }
-@media screen and (max-width:500px) {
+@media screen and ( max-width:610px) {
+   .auth_nav ul li a {
+      font-size:1.1rem; 
+   }  
+}
+@media screen and (max-width:600px) {
    .auth_nav div  {
+      font-size: 1rem;
    align-self:center;
 }
    .auth_nav ul {
       flex-direction:column;
+      display: none;
    }
+
    .auth_nav ul li {
       margin:8px;
-      font-size:0.87rem;
-      /* text-transform: lowercase; */
+      font-size:1rem;
+   }
+    .auth_nav ul li a {
+      font-size: 0.7rem;
+   }
+    .auth_nav .nav_burger {
+      display: block;
    }
    main {
       width: 80%;
