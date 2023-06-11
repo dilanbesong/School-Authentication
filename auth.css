@@ -78,7 +78,7 @@ body {
 .auth_nav ul li a {
    text-decoration: none;  
    color: #fff; 
-   font-size: 1rem; 
+   font-size: 0.9rem; 
     text-align: justify;          
 }
 .auth_nav .nav_burger {
@@ -197,14 +197,9 @@ main {
 .form div button:hover {
    background-color: #420d0d;
 }
-@media screen and ( max-width:610px) {
-   .auth_nav ul li a {
-      font-size:1.1rem; 
-   }  
-}
+
 @media screen and (max-width:600px) {
    .auth_nav div  {
-      font-size: 1rem;
    align-self:center;
 }
    .auth_nav ul {
@@ -214,10 +209,9 @@ main {
 
    .auth_nav ul li {
       margin:8px;
-      font-size:1rem;
    }
     .auth_nav ul li a {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
    }
     .auth_nav .nav_burger {
       display: block;
