@@ -198,6 +198,50 @@ main {
    background-color: #420d0d;
 }
 
+.auth_dialog_Box {
+   position:fixed;
+   top:0;
+   left:50%;
+   transform: translate(-50%, -50%) scale(0);
+   background-color:#fff;
+   width: 290px;
+   height:fit-content;
+   text-align: center;
+   border-radius: 6px;
+   padding: 0 30px 30px;
+   border: 1px solid #ccc;
+   box-shadow: 0 0 4px 3px rgba(190, 39, 39, 0.2);
+   transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+   /* visibility: visible; */
+   top: 50%;
+   transform: translate(-50%, -50%) scale(1);
+}
+
+.auth_dialog_Box p {
+   padding:6px;
+}
+.auth_dialog_Box img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   border-radius:50%;
+}
+.auth_dialog_Box .close_btn {
+   outline: none;
+   width: 80%;
+   padding: 0.5rem;
+    color: #fff;
+   background-color: #420d0d;
+   border-radius: 3px;
+   cursor: pointer;
+   border: none;
+}
+
+
 @media screen and (max-width:600px) {
    .auth_nav div  {
    align-self:center;
