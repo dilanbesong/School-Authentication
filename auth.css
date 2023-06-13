@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+
+
 * {
    margin: 0;  
    padding: 0;   
    box-sizing: border-box;  
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+     font-family: 'Open Sans', sans-serif;
      overflow: hidden;       
 }
 
@@ -46,6 +51,9 @@ body {
 .auth_nav img {
    width: 40px;
    height: 40px;
+}
+.auth_nav div.logo span {
+   align-self: center;
 }
 
 .auth_nav ul {
@@ -141,7 +149,7 @@ main {
    overflow: hidden;
    background-color: #fff;
    border-radius: 4px;
-   height: 60vh;
+   height:460px;
 }
     
 .auth_slider {
@@ -151,7 +159,7 @@ main {
    height:100%;
    width:300%;
    border-radius: 4px;
-   transition: 500ms;
+   transition: 1000ms;
 }
 .form {
   position: relative;
@@ -204,7 +212,7 @@ main {
    left:50%;
    transform: translate(-50%, -50%) scale(0);
    background-color:#fff;
-   width: 290px;
+   width: 260px;
    height:fit-content;
    text-align: center;
    border-radius: 6px;
@@ -215,7 +223,6 @@ main {
 }
 
 .open-popup {
-   /* visibility: visible; */
    top: 50%;
    transform: translate(-50%, -50%) scale(1);
 }
@@ -263,7 +270,7 @@ main {
    main {
       width: 80%;
    }
-   
+
    .form div input {
       width:100%;
    }

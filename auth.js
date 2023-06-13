@@ -14,6 +14,8 @@ dialogueBox.classList.remove("open-popup");
 })
 form.addEventListener('submit', e => {
    e.preventDefault()
+
+   // backend goes here
    dialogueBox.classList.add("open-popup");
 })
 

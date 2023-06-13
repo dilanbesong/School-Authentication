@@ -15,7 +15,7 @@
       <nav class="auth_nav">
         <div class="logo">
           <img src="esutlogo.webp" alt="">
-          <span>CEE APP</span>
+          <span>CEE PORTAL</span>
         </div>
         <ul>
           <li><a href="#" class="auth_hightlight">Sign up</a></li>
@@ -36,23 +36,27 @@
     
             <div>
               <p>Username</p>
-              <input type="text" focus placeholder="enter username ..." />
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="text" focus placeholder="enter username ..." required />
             </div>
             <div>
               <p>Password</p>
-              <input type="password" placeholder="enter password ..." />
+              <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+              <input type="password" placeholder="enter password ..." required />
             </div>
             <div>
               <p>Email</p>
-              <input type="email" placeholder="enter email ..." />
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="email" placeholder="enter email ..." required />
             </div>
             <div>
               <p>PhoneNumber</p>
-              <input type="text" maxlength="11" placeholder="enter phoneNumber ..." />
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <input type="text" maxlength="11" placeholder="enter phoneNumber ..." required />
             </div>
             <div>
               <p>Reg number</p>
-              <input type="text" maxlength="13" placeholder="enter regNumber ..." />
+              <input type="text" maxlength="13" placeholder="enter regNumber ..." required />
             </div>
             <!-- <div  class="select_wrapper">
               <p>level</p>
@@ -65,7 +69,7 @@
               </select>
             </div> -->
             <div>
-              <button type="submit" >signUp</button>
+              <button type="submit" >Sign in</button>
             </div>
           </form>
 
@@ -73,18 +77,20 @@
           <form class="SignIn_form form" autocomplete="off">
             <div>
               <p>Email</p>
-              <input type="text" placeholder="enter email ..." />
+               <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="text" placeholder="enter email ..." required />
             </div>
             <div>
               <p>Password</p>
-              <input type="password" placeholder="enter password..." />
+              <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+              <input type="password" placeholder="enter password..." required />
             </div>
-            <div>
+            <!-- <div>
               <p>Reg Number</p>
-              <input type="text" placeholder="enter regNumber ..." />
-            </div>
+              <input type="text" placeholder="enter regNumber ..." required />
+            </div> -->
             <div>
-              <button type="submit">signIn</button>
+              <button type="submit">Sign in</button>
             </div>
           </form>
 
@@ -93,15 +99,17 @@
           <form class="Forgotten_Password_form form" autocomplete="off">
             <div>
               <p>Email</p>
-              <input type="email" placeholder="enter email ..." />
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="email" placeholder="enter email ..." required />
             </div>
             <div>
               <p>RegNumber</p>
-              <input type="text" placeholder="enter regNumber ..." />
+              <input type="text" placeholder="enter regNumber ..." required />
             </div>
             <div>
               <p>Otp</p>
-              <input type="text" placeholder="enter temporal password ..." />
+              <i class="fas fa-ring" aria-hidden="true"></i>
+              <input type="text" placeholder="enter temporal password ..." required />
             </div>
             <div>
                 <button type="submit">verify</button>
@@ -111,11 +119,11 @@
 
         </div>
       </section>
-       <div class="auth_dialog_Box open-popup">
+       <div class="auth_dialog_Box">
            <img src="esutlogo.webp" alt="esutlogo">
              <h3>Thank You!</h3>
-             <p>Your details have been successfully submitted thanks!</p>
-             <button class="close_btn" type="submit">ok</button>
+             <p>Your details have successfully been submitted thanks : )</p>
+             <button class="close_btn" type="submit">Ok</button>
        </div>
     </main>
   </body>
