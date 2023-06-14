@@ -34,16 +34,42 @@ navToggleButton.addEventListener('click', (e) => {
      }
   
  })
-const navButtons = document.querySelectorAll("a");
-navButtons.forEach((navButton, i) => {
-  
-  navButtons[i].classList.remove("auth_hightlight");
 
-  navButton.addEventListener("click", () => {
+ // --------- carosel slide code goes here ----//
+
+ const signUpPageIndex = 0;
+ const signInPageIndex = 1
+ const passwordPageIndex = 2
+
+ function signInPage() {
     auth_slider.style.transform = `translateX(${
-      -parseFloat(form.clientWidth) * i
+      -parseFloat(form.clientWidth) * signInPageIndex
     }px)`;
-    navButton.classList.add("auth_hightlight");
-  });
+ }
 
-});
+ function signUpPage() {
+     auth_slider.style.transform = `translateX(${
+       -parseFloat(form.clientWidth) * signInPageIndex
+     }px)`;
+ }
+
+ function passwordPage() {
+    auth_slider.style.transform = `translateX(${
+      -parseFloat(form.clientWidth) * passwordPageIndex
+    }px)`;
+ }
+
+
+// const navButtons = document.querySelectorAll("a");
+// navButtons.forEach((navButton, i) => {
+  
+//   navButtons[i].classList.remove("auth_hightlight");
+
+//   navButton.addEventListener("click", () => {
+//     auth_slider.style.transform = `translateX(${
+//       -parseFloat(form.clientWidth) * i
+//     }px)`;
+//     navButton.classList.add("auth_hightlight");
+//   });
+
+// });

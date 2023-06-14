@@ -18,9 +18,8 @@
           <span>CEE PORTAL</span>
         </div>
         <ul>
-          <li><a href="#" class="auth_hightlight">Sign up</a></li>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Password</a></li>
+          <li>Don't have an account?</li>
+          <li><a href="#" onclick="signUpPage()">SIGNUP</a></li>
         </ul>
        <div class="nav_burger">
            <i class="fa fa-bars"></i>
@@ -31,6 +30,7 @@
     <main>
       <section>
         <div class="auth_slider">
+
           <!----------------------------- SignIn user component --------------------------->
           
        <form class="SignUp_form form" autocomplete="off">
@@ -40,21 +40,24 @@
                </div>
                <h3>Create Account</h3>
          <section class="form_control_input">
-            <div>
+            <!-- <div>
               <p>Username</p>
               <i class="fa fa-user" aria-hidden="true"></i>
               <input type="text" focus placeholder="enter username ..." required />
-            </div>
-            <div>
-              <p>Password</p>
-              <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-              <input type="password" placeholder="enter password ..." required />
-            </div>
+            </div> -->
+
             <div>
               <p>Email</p>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
               <input type="email" placeholder="enter email ..." required />
             </div>
+
+            <div>
+              <p>Password</p>
+              <!-- <i class="fa fa-unlock-alt" aria-hidden="true"></i> -->
+              <input type="password" placeholder="enter password ..." required />
+            </div>
+          
             <!-- <div>
               <p>PhoneNumber</p>
               <i class="fa fa-phone" aria-hidden="true"></i>
@@ -77,11 +80,14 @@
          </section>
            
             <p>
-              <button type="submit" >Sign in</button>
+              <button type="submit" >Sign up</button>
+               <p> Already have an account ? <a href="#" onclick="signInPage()">Click Here</a></p>
             </p>
        </form>
 
-          <!----------------------------- SignUp user component --------------------------->
+
+         
+             <!----------------------------- SignIn user component --------------------------->
           <form class="SignIn_form form"  autocomplete="off">
              <div class="form_header">
                    <img src="esutlogo.webp" alt="esutlogo">
@@ -106,8 +112,10 @@
             </section>
             <p>
               <button type="submit">Sign up</button>
+              <p>Forgot password ? <a href="#" onclick="passwordPage()">Click Here</a></p>
             </p>
           </form>
+
 
           <!----------------------------- Forgotten password component --------------------------->
 
@@ -120,7 +128,7 @@
             <section class="form_control_input" id="forgot_password">
                <div>
               <p>Email</p>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
               <input type="email" placeholder="enter email ..." required />
             </div>
             <div>
