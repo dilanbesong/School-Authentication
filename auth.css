@@ -32,9 +32,9 @@ select {
    cursor: pointer;
 }
 .auth_nav{
-   position: fixed;
+   /* position: fixed; */
    width: 100%;
-   z-index: 1;
+   /* z-index: 1; */
    display: flex;
    background-color: #fff;
    animation: animate_auth_nav 800ms forwards ease-in 500ms;
