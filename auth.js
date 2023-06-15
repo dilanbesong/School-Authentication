@@ -49,7 +49,7 @@ navToggleButton.addEventListener('click', (e) => {
 
  function signUpPage() {
      auth_slider.style.transform = `translateX(${
-       -parseFloat(form.clientWidth) * signInPageIndex
+       -parseFloat(form.clientWidth) * signUpPageIndex
      }px)`;
  }
 
@@ -58,6 +58,8 @@ navToggleButton.addEventListener('click', (e) => {
       -parseFloat(form.clientWidth) * passwordPageIndex
     }px)`;
  }
+
+ 
 
 
 // const navButtons = document.querySelectorAll("a");
