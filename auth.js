@@ -75,3 +75,20 @@ navToggleButton.addEventListener('click', (e) => {
 //   });
 
 // });
+
+
+//  <!-- <header>
+//       <nav class="auth_nav">
+//         <div class="logo">
+//           <img src="esutlogo.webp" alt="">
+//           <span>CEE PORTAL</span>
+//         </div>
+//         <ul>
+//           <li>Already have an account?</li>
+//           <li><a href="#" onclick="signInPage()">Sign in</a></li>
+//         </ul>
+//        <div class="nav_burger">
+//            <i class="fa fa-bars"></i>
+//        </div>
+//       </nav>
+//     </header> -->
