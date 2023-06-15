@@ -15,6 +15,8 @@
 body {
    display:grid;
    grid-template-columns: 1fr;
+   justify-items: center;
+   align-items: center;
    min-height: 100vh;
    background-image:url(library.webp);
    backdrop-filter:blur(10px);
@@ -31,7 +33,7 @@ select {
    width: 180px;
    cursor: pointer;
 }
-.auth_nav{
+/* .auth_nav{
    position: fixed;
    width: 100%;
    z-index: 1;
@@ -138,13 +140,14 @@ select {
     100% {
        transform: scale(1.1);
     }             
-}
+} */
 
 /*------------------------------- End of authentication navigation ------------------------ */
 
 main {
     position:relative;
     margin: 0 auto;
+    justify-items: center;
     width:50%;
    overflow: hidden;
    background-color: #fff;
