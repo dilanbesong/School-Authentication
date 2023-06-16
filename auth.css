@@ -7,7 +7,7 @@
    padding: 0;   
    box-sizing: border-box;  
    font-family: 'Open Sans', sans-serif;
-   overflow: hidden;       
+   /* overflow: hidden;        */
 }
 
 
@@ -21,7 +21,7 @@ body {
    background-image:url(library.webp);
    backdrop-filter:blur(10px);
    background-size: cover;
-   overflow: hidden;
+   /* overflow: hidden; */
    
 }
 
@@ -40,10 +40,11 @@ select {
    cursor: pointer;
 }
 .auth_nav{
-   position:relative;
-   width: 100vw;
+   position:fixed;
+   width: 100%;
+   left: 0;
    top: 0;
-   /* z-index: 1; */
+   z-index: 1;
    display: flex;
    background-color:rgb(71, 11, 11);
    animation: animate_auth_nav 800ms forwards ease-in 500ms;
@@ -231,7 +232,7 @@ main {
 }
 
 .form div p {
-   margin-left: -10px;
+   margin-left: -8px;
 }
 
 .form p a {
