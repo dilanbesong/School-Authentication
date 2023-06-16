@@ -10,7 +10,7 @@ const closeDialogButton = dialogueBox.querySelector(".close_btn");
 //console.log(navToggleButton.classList.contains("fa-bars"));
 
 closeDialogButton.addEventListener('click', () => {
-dialogueBox.classList.remove("open-popup");
+     dialogueBox.classList.remove("open-popup");
 })
 form.addEventListener('submit', e => {
    e.preventDefault()
