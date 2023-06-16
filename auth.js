@@ -7,7 +7,7 @@ const dialogueBox = document.querySelector(".auth_dialog_Box");
 const closeDialogButton = dialogueBox.querySelector(".close_btn");
 
 // fa fa-times or fa fa-bars
-console.log(navToggleButton.classList.contains("fa-bars"));
+//console.log(navToggleButton.classList.contains("fa-bars"));
 
 closeDialogButton.addEventListener('click', () => {
 dialogueBox.classList.remove("open-popup");
@@ -18,6 +18,31 @@ form.addEventListener('submit', e => {
    // backend goes here
    dialogueBox.classList.add("open-popup");
 })
+
+
+ const signUpPageIndex = 0;
+ const signInPageIndex = 1;
+ const passwordPageIndex = 2;
+
+ function signInPage() {
+   auth_slider.style.transform = `translateX(${
+     -parseFloat(form.clientWidth) * signInPageIndex
+   }px)`;
+ }
+
+ function signUpPage() {
+   auth_slider.style.transform = `translateX(${
+     -parseFloat(form.clientWidth) * signUpPageIndex
+   }px)`;
+ }
+
+ function passwordPage() {
+   auth_slider.style.transform = `translateX(${
+     -parseFloat(form.clientWidth) * passwordPageIndex
+   }px)`;
+ }
+
+
 
 // navToggleButton.addEventListener('click', (e) => {
 //   navBar.classList.toggle("inc_nav_height");
@@ -37,27 +62,7 @@ form.addEventListener('submit', e => {
 
  // --------- carosel slide code goes here ----//
 
- const signUpPageIndex = 0;
- const signInPageIndex = 1
- const passwordPageIndex = 2
 
- function signInPage() {
-    auth_slider.style.transform = `translateX(${
-      -parseFloat(form.clientWidth) * signInPageIndex
-    }px)`;
- }
-
- function signUpPage() {
-     auth_slider.style.transform = `translateX(${
-       -parseFloat(form.clientWidth) * signUpPageIndex
-     }px)`;
- }
-
- function passwordPage() {
-    auth_slider.style.transform = `translateX(${
-      -parseFloat(form.clientWidth) * passwordPageIndex
-    }px)`;
- }
 
  
 
