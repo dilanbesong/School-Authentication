@@ -16,7 +16,7 @@ body {
    display:grid;
    grid-template-columns: 1fr;
    justify-items: center;
-   align-items: center;
+   align-items:start;
    min-height: 100vh;
    background-image:url(library.webp);
    backdrop-filter:blur(10px);
@@ -33,18 +33,20 @@ select {
    width: 155px;
    cursor: pointer;
 }
-/* .auth_nav{
-   position: fixed;
-   width: 100%;
-   z-index: 1;
+.auth_nav{
+   position:relative;
+   width: 100vw;
+   top: 0;
+   /* z-index: 1; */
    display: flex;
-   background-color: #fff;
+   background-color:rgb(71, 11, 11);
    animation: animate_auth_nav 800ms forwards ease-in 500ms;
    justify-content:space-between;
    padding: 6px 8px 6px 8px;
    min-height:50px;
    max-height:0;
    transition: max-height 3s ease;
+   color: #fff;
 }
 .inc_nav_height {
    max-height:400px;
@@ -66,7 +68,7 @@ select {
    font-size:13px;
 }
 
-.auth_nav ul {
+/* .auth_nav ul {
    display: flex; 
    justify-content:center; 
    align-items:flex-start; 
@@ -115,7 +117,7 @@ select {
 .auth_hightlight {
    color: yellow;
 }
-
+ */
 
 @keyframes animate_auth_nav {
    0% {
@@ -125,7 +127,7 @@ select {
       transform: translateY(0);
    }
 }
-@keyframes animate_signUp {
+/* @keyframes animate_signUp {
     0% {
        transform:scale(0);
     } 
@@ -218,6 +220,7 @@ main {
 
 .form p {
   padding: 8px;
+  font-size: 14px;
 }
 
 .form p a {
