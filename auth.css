@@ -29,8 +29,14 @@ i {
    padding-right: 5px;
 }
 
+.fa-eye {
+   padding: 0;
+   font-size: 5px;
+   color:#ccc;
+   margin-left:-15px;
+}
 select {
-   width: 155px;
+   width: 190px;
    cursor: pointer;
 }
 .auth_nav{
@@ -212,6 +218,7 @@ main {
    border-bottom-style: ridge;
    border-bottom-width:2px;
    transition: 1s;
+   width: 170px;
 }
 .form .form_control_input div input:focus{
    padding-left:8px;
@@ -221,6 +228,10 @@ main {
 .form p {
   padding: 8px;
   font-size: 14px;
+}
+
+.form div p {
+   margin-left: -10px;
 }
 
 .form p a {

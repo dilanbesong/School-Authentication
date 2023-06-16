@@ -2,7 +2,7 @@ const auth_slider = document.querySelector(".auth_slider");
 const navBar = document.querySelector('.auth_nav')
 const form = document.querySelector(".form");
 const navButtonContainer = document.querySelector('ul')
-const navToggleButton = document.querySelector('i') 
+//const navToggleButton = document.querySelector('i') 
 const dialogueBox = document.querySelector(".auth_dialog_Box");
 const closeDialogButton = dialogueBox.querySelector(".close_btn");
 
@@ -19,21 +19,21 @@ form.addEventListener('submit', e => {
    dialogueBox.classList.add("open-popup");
 })
 
-navToggleButton.addEventListener('click', (e) => {
-  navBar.classList.toggle("inc_nav_height");
-     if(e.target.classList.contains('fa-bars')){
-        e.target.classList.add('fa-times')
-        e.target.classList.remove("fa-bars")
-        navButtonContainer.style.display = 'flex'
-        return
+// navToggleButton.addEventListener('click', (e) => {
+//   navBar.classList.toggle("inc_nav_height");
+//      if(e.target.classList.contains('fa-bars')){
+//         e.target.classList.add('fa-times')
+//         e.target.classList.remove("fa-bars")
+//         navButtonContainer.style.display = 'flex'
+//         return
         
-     }else {
-         e.target.classList.add("fa-bars");
-         e.target.classList.remove("fa-times");
-         navButtonContainer.style.display = "none";
-     }
+//      }else {
+//          e.target.classList.add("fa-bars");
+//          e.target.classList.remove("fa-times");
+//          navButtonContainer.style.display = "none";
+//      }
   
- })
+//  })
 
  // --------- carosel slide code goes here ----//
 
