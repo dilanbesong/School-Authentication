@@ -171,7 +171,7 @@ main {
    height:fit-content;
    width:300%;
    border-radius: 4px;
-   transition: 300ms;
+   transition: 400ms;
 }
 .form {
   position: relative;
