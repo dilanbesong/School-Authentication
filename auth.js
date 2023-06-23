@@ -1,10 +1,14 @@
-const auth_slider = document.querySelector(".auth_slider");
-const navBar = document.querySelector('.auth_nav')
-const form = document.querySelector(".form");
-const navButtonContainer = document.querySelector('ul')
+const auth_slider = qs(".auth_slider")
+const navBar = qs('.auth_nav')
+const form = qs(".form")
+const navButtonContainer = qs('ul')
 //const navToggleButton = document.querySelector('i') 
-const dialogueBox = document.querySelector(".auth_dialog_Box");
-const closeDialogButton = dialogueBox.querySelector(".close_btn");
+const dialogueBox = qs(".auth_dialog_Box")
+const closeDialogButton = qs(".close_btn", dialogueBox)
+
+function qs(selector, parent=document){
+  return parent.querySelector(selector)
+}
 
 // fa fa-times or fa fa-bars
 //console.log(navToggleButton.classList.contains("fa-bars"));
@@ -20,29 +24,32 @@ form.addEventListener('submit', e => {
 })
 
 
- const signUpPageIndex = 0;
- const signInPageIndex = 1;
- const passwordPageIndex = 2;
+ const pageIndex = {
+
+        signUpPageIndex:0,
+        signInPageIndex:1,
+        passwordPageIndex:2 
+    }
 
  function signInPage() {
    auth_slider.style.transform = `translateX(${
-     -parseFloat(form.clientWidth) * signInPageIndex
+     -parseFloat(form.clientWidth) * pageIndex.signInPageIndex
    }px)`;
  }
 
  function signUpPage() {
    auth_slider.style.transform = `translateX(${
-     -parseFloat(form.clientWidth) * signUpPageIndex
+     -parseFloat(form.clientWidth) * pageIndex.signUpPageIndex
    }px)`;
  }
 
  function passwordPage() {
    auth_slider.style.transform = `translateX(${
-     -parseFloat(form.clientWidth) * passwordPageIndex
+     -parseFloat(form.clientWidth) * pageIndex.passwordPageIndex
    }px)`;
  }
 
-
+console.log(...pageIndex);
 
 // navToggleButton.addEventListener('click', (e) => {
 //   navBar.classList.toggle("inc_nav_height");
